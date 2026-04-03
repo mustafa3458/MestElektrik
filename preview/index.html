@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./27-Mar-2026-23_59_01.ico" type="image/x-icon" />
+    <title>Mest Elektrik Elektronik</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="./index.html">
+        <img src="./yenimestlogo.png" alt="Mest Logo" />
+      </a>
+      <div class="mobile-shortcuts">
+        <a href="#quote">Teklif</a>
+        <a href="#shop">Magaza</a>
+        <button class="menu-toggle" type="button" aria-label="Menüyü aç" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav">
+        <a href="#services">Hizmetler</a>
+        <a href="#quote">Teklif Al</a>
+        <a href="#shop">Magaza</a>
+        <a href="#contact">Iletisim</a>
+        <a href="#contact">Hakkimizda</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="#shop">
+          <span class="cart-icon">🛒</span>
+          <span>Sepet</span>
+        </a>
+        <div class="auth-stack">
+          <a class="pill auth-pill" href="./login.html">Giris Yap</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="backgrnd"></div>
+        <div>
+          <p class="eyebrow">ELEKTRIK VE ELEKTRONIK COZUMLERI</p>
+          <h1>Elektrik ve Elektronik Çözümleri Tek Platformda</h1>
+          <p class="lead">
+            Elektrik tesisat kurulumundan arıza tespitine, akıllı sistemlerden hazır panolara kadar geniş hizmet ve ürün yelpazemizle projelerinizi kolaylaştırıyoruz.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#quote">Teklif Hesapla</a>
+            <a class="button secondary" href="#shop">Urunleri Incele</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./mest-logo.png" alt="Mest Logo" />
+          <p>MEST ELEKTRIK ELEKTRONIK SAN LTD. STI.</p>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="section-head">
+          <h2>Hizmetler</h2>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <h3>Elektrik Tesisat</h3>
+            <p>Konut, ofis ve ticari alanlar icin yeni kurulum ve yenileme projeleri.</p>
+          </article>
+          <article class="card">
+            <h3>Ariza Tespiti</h3>
+            <p>Hizli problem analizi, pano kontrolu ve guvenlik odakli saha hizmetleri.</p>
+          </article>
+          <article class="card">
+            <h3>Akilli Sistemler</h3>
+            <p>Role modulu, uzaktan kontrol ve modern donusum cozumleri.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quote" class="section">
+        <div class="section-head">
+          <h2>Teklif Formu</h2>
+        </div>
+        <div class="grid split">
+          <form class="card form">
+            <label>m2<input type="number" placeholder="120" /></label>
+            <label>Kat Sayisi<input type="number" placeholder="4" /></label>
+            <label>Daire Sayisi<input type="number" placeholder="8" /></label>
+            <label>Bolge<input type="text" placeholder="Istanbul / Kadikoy" /></label>
+            <label class="full">Aciklama<textarea placeholder="Yapilacak isi kisaca yazin"></textarea></label>
+            <button type="button" class="button primary">Ortalama Fiyat Goster</button>
+          </form>
+          <aside class="card quote-result">
+            <span>Daire Tesisat Teklif Formu</span>
+            <small>Kesin fiyat saha kesfi sonrasi netlesir.
+              fiyatlandirma m2, kat ve daire sayisi gibi kriterlere gore yapay zeka destekli tahmini olarak hesaplanir.
+            </small>
+            <small>Tam fiyatı öğrenmek için randevu oluşturabilir veya bizimle iletişime geçebilirsiniz.</small>
+            <h2 style="color: rgba(0, 0, 0, 0.675); font-size: xx-large;">45000 TL</h2>
+            <button type="button" class="button primary" style=" align-self: flex-end;">Randevu Oluştur</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="shop" class="section">
+        <div class="section-head">
+          <h2>One Cikan Urunler</h2>
+        </div>
+        <div class="grid three">
+          <article class="card product">
+            <strong>Kompakt Mini Pano</strong>
+            <p>Kurumsal ve konut projeleri icin hazir pano cozumu.</p>
+            <span>4.250 TL</span>
+          </article>
+          <article class="card product">
+            <strong>NYAF Kablo Seti</strong>
+            <p>Montaj ve panel ici baglantilar icin set halinde kablo.</p>
+            <span>1.890 TL</span>
+          </article>
+          <article class="card product">
+            <strong>Wi-Fi Role Modulu</strong>
+            <p>Akilli sistem gecisleri icin uzaktan kontrol modulu.</p>
+            <span>950 TL</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>Iletisim</h2>
+        </div>
+        <div class="grid three">
+          <article class="card"><strong>Telefon</strong><p>+90 542 726 24 86</p><p>+90 543 316 48 41</p></article>
+          <article class="card"><strong>E-posta</strong><p>mestelektrik@gmail.com</p></article>
+          <article class="card"><strong>Bolge</strong><p>Istanbul ve Kocaeli odakli hizmet</p></article>
+        </div>
+      </section>
+    </main>
+    <script src="./preview.js"></script>
+  </body>
+</html>

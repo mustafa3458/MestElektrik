@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kullanıcı Girisi</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="button primary" href="./index.html" style="position: sticky; top: 16px; left: 16px;">Geri Dön</a>
+    <main class="login-page">
+      <div class="card login-card">
+        <img src="./mest-logo.png" alt="Mest Logo" class="login-logo" style="position: relative; align-self: center;"/>
+        <h3>Kullanıcı Girisi</h3>
+        <label>E-posta<input id="email" value="mustafaemin3458@gmail.com" /></label>
+        <label>Sifre<input id="password" type="password" /></label>
+        <button class="button primary full-width" onclick="login()">Giris Yap</button>
+        <div class="oauth">
+          <button class="button secondary full-width" disabled>Google</button>
+          <button class="button secondary full-width" disabled>Apple</button>
+        </div>
+        <p id="error" class="error"></p>
+      </div>
+    </main>
+    <script src="./preview.js"></script>
+  </body>
+</html>
